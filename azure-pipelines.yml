@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: BatchScript@1
+  inputs:
+    filename: '$(System.DefaultWorkingDirectory)\'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
